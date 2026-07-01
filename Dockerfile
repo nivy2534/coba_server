@@ -1,4 +1,4 @@
-FROM python/python:3.10.20-trixie
+FROM python:3.10-slim
 
 USER root
 
