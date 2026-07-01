@@ -46,6 +46,17 @@ pipeline {
                 """
             }
         }
+        stage('deploy') {
+            setps{
+                sh '''
+                    docker pull nivy2534/coba_server:latest
+
+                    cd /opt/infra
+
+                    docker compose up -d
+                '''
+            }
+        }
     }
 
     post {
