@@ -46,6 +46,16 @@ pipeline {
                 """
             }
         }
+
+        stage('Debug'){
+            steps{
+                sh '''
+                    pwd
+                    ls -la
+                    ls -la ..
+                '''
+            }
+        }
         
         stage('deploy') {
             steps{
