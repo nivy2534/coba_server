@@ -46,8 +46,9 @@ pipeline {
                 """
             }
         }
+        
         stage('deploy') {
-            setps{
+            steps{
                 sh '''
                     docker pull nivy2534/coba_server:latest
 
