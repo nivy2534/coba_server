@@ -52,7 +52,7 @@ pipeline {
                 sh '''
                     docker pull nivy2534/coba_server:latest
 
-                    cd /opt/infra
+                    cd ../infra
 
                     docker compose up -d
                 '''
